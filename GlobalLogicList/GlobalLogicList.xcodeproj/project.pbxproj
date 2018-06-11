@@ -16,6 +16,9 @@
 		035CD9BF20CEE8FC0042BFB0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD9BE20CEE8FC0042BFB0 /* main.m */; };
 		035CD9C920CEE8FC0042BFB0 /* GlobalLogicListTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD9C820CEE8FC0042BFB0 /* GlobalLogicListTests.m */; };
 		035CD9D420CEE8FC0042BFB0 /* GlobalLogicListUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD9D320CEE8FC0042BFB0 /* GlobalLogicListUITests.m */; };
+		9C3ABB022501969330E7E4CB /* libPods-GlobalLogicList.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19250A96FC911EB0052D24C2 /* libPods-GlobalLogicList.a */; };
+		BDB2604013C8079F8E498F1A /* libPods-GlobalLogicListTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8BA9CE30AF9898F729B6A887 /* libPods-GlobalLogicListTests.a */; };
+		DF6B4FAD1846D9464A818729 /* libPods-GlobalLogicListUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F15D5167728C713485D5527 /* libPods-GlobalLogicListUITests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,15 @@
 		035CD9CF20CEE8FC0042BFB0 /* GlobalLogicListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobalLogicListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		035CD9D320CEE8FC0042BFB0 /* GlobalLogicListUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GlobalLogicListUITests.m; sourceTree = "<group>"; };
 		035CD9D520CEE8FC0042BFB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19250A96FC911EB0052D24C2 /* libPods-GlobalLogicList.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlobalLogicList.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F15D5167728C713485D5527 /* libPods-GlobalLogicListUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlobalLogicListUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		650427CC42DAECF29E237E53 /* Pods-GlobalLogicListTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogicListTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalLogicListTests/Pods-GlobalLogicListTests.release.xcconfig"; sourceTree = "<group>"; };
+		7060A2A01A4F7D052C01F80F /* Pods-GlobalLogicListUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogicListUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalLogicListUITests/Pods-GlobalLogicListUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		81E2AB8BAFE3742CC991A308 /* Pods-GlobalLogicList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogicList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalLogicList/Pods-GlobalLogicList.debug.xcconfig"; sourceTree = "<group>"; };
+		8BA9CE30AF9898F729B6A887 /* libPods-GlobalLogicListTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GlobalLogicListTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA0B47EB3C6938C29C756D81 /* Pods-GlobalLogicListTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogicListTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalLogicListTests/Pods-GlobalLogicListTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C6395AF37E8D613AB1765404 /* Pods-GlobalLogicListUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogicListUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalLogicListUITests/Pods-GlobalLogicListUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FCC479D3A9B0F18F5DDD8DB9 /* Pods-GlobalLogicList.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GlobalLogicList.release.xcconfig"; path = "Pods/Target Support Files/Pods-GlobalLogicList/Pods-GlobalLogicList.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C3ABB022501969330E7E4CB /* libPods-GlobalLogicList.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDB2604013C8079F8E498F1A /* libPods-GlobalLogicListTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF6B4FAD1846D9464A818729 /* libPods-GlobalLogicListUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +103,8 @@
 				035CD9C720CEE8FC0042BFB0 /* GlobalLogicListTests */,
 				035CD9D220CEE8FC0042BFB0 /* GlobalLogicListUITests */,
 				035CD9AA20CEE8FB0042BFB0 /* Products */,
+				AAE63DFC1E96F8B20CD3C9C8 /* Pods */,
+				36395D049C0C7CDE1E144602 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -137,6 +154,29 @@
 			path = GlobalLogicListUITests;
 			sourceTree = "<group>";
 		};
+		36395D049C0C7CDE1E144602 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19250A96FC911EB0052D24C2 /* libPods-GlobalLogicList.a */,
+				8BA9CE30AF9898F729B6A887 /* libPods-GlobalLogicListTests.a */,
+				2F15D5167728C713485D5527 /* libPods-GlobalLogicListUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AAE63DFC1E96F8B20CD3C9C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				81E2AB8BAFE3742CC991A308 /* Pods-GlobalLogicList.debug.xcconfig */,
+				FCC479D3A9B0F18F5DDD8DB9 /* Pods-GlobalLogicList.release.xcconfig */,
+				BA0B47EB3C6938C29C756D81 /* Pods-GlobalLogicListTests.debug.xcconfig */,
+				650427CC42DAECF29E237E53 /* Pods-GlobalLogicListTests.release.xcconfig */,
+				7060A2A01A4F7D052C01F80F /* Pods-GlobalLogicListUITests.debug.xcconfig */,
+				C6395AF37E8D613AB1765404 /* Pods-GlobalLogicListUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +184,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 035CD9D820CEE8FC0042BFB0 /* Build configuration list for PBXNativeTarget "GlobalLogicList" */;
 			buildPhases = (
+				0A5C1BB6F74065FC7DBD7B1A /* [CP] Check Pods Manifest.lock */,
 				035CD9A520CEE8FB0042BFB0 /* Sources */,
 				035CD9A620CEE8FB0042BFB0 /* Frameworks */,
 				035CD9A720CEE8FB0042BFB0 /* Resources */,
@@ -161,6 +202,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 035CD9DB20CEE8FC0042BFB0 /* Build configuration list for PBXNativeTarget "GlobalLogicListTests" */;
 			buildPhases = (
+				518D04FE6361908A8B18CCF9 /* [CP] Check Pods Manifest.lock */,
 				035CD9C020CEE8FC0042BFB0 /* Sources */,
 				035CD9C120CEE8FC0042BFB0 /* Frameworks */,
 				035CD9C220CEE8FC0042BFB0 /* Resources */,
@@ -179,6 +221,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 035CD9DE20CEE8FC0042BFB0 /* Build configuration list for PBXNativeTarget "GlobalLogicListUITests" */;
 			buildPhases = (
+				E7D5DCB60A62CB7AC6F31AAD /* [CP] Check Pods Manifest.lock */,
 				035CD9CB20CEE8FC0042BFB0 /* Sources */,
 				035CD9CC20CEE8FC0042BFB0 /* Frameworks */,
 				035CD9CD20CEE8FC0042BFB0 /* Resources */,
@@ -261,6 +304,63 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0A5C1BB6F74065FC7DBD7B1A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalLogicList-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		518D04FE6361908A8B18CCF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalLogicListTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7D5DCB60A62CB7AC6F31AAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GlobalLogicListUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		035CD9A520CEE8FB0042BFB0 /* Sources */ = {
@@ -437,6 +537,7 @@
 		};
 		035CD9D920CEE8FC0042BFB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 81E2AB8BAFE3742CC991A308 /* Pods-GlobalLogicList.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +555,7 @@
 		};
 		035CD9DA20CEE8FC0042BFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FCC479D3A9B0F18F5DDD8DB9 /* Pods-GlobalLogicList.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -471,6 +573,7 @@
 		};
 		035CD9DC20CEE8FC0042BFB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA0B47EB3C6938C29C756D81 /* Pods-GlobalLogicListTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +593,7 @@
 		};
 		035CD9DD20CEE8FC0042BFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 650427CC42DAECF29E237E53 /* Pods-GlobalLogicListTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -509,6 +613,7 @@
 		};
 		035CD9DF20CEE8FC0042BFB0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7060A2A01A4F7D052C01F80F /* Pods-GlobalLogicListUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T637C7N937;
@@ -527,6 +632,7 @@
 		};
 		035CD9E020CEE8FC0042BFB0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6395AF37E8D613AB1765404 /* Pods-GlobalLogicListUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T637C7N937;
