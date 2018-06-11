@@ -10,4 +10,18 @@
 
 @implementation ServicesManager
 
+static ServicesManager *sharedInstance;
+
++ (instancetype)sharedInstance {
+	
+	@synchronized(self)
+	{
+		if (!sharedInstance) {
+			sharedInstance = [[self alloc] init];
+		}
+
+		return sharedInstance;
+	}
+}
+
 @end

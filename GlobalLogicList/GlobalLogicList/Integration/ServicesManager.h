@@ -10,4 +10,6 @@
 
 @interface ServicesManager : NSObject
 
++ (instancetype) sharedInstance;
+
 @end
