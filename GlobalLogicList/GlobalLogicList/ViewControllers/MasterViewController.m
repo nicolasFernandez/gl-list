@@ -8,6 +8,9 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
+#import "InfoTableViewCell.h"
+#import "CellInfo.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface MasterViewController ()
 
@@ -63,11 +66,13 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-	//TODO: replace with custom object
-//	NSDate *object = self.objects[indexPath.row];
-//	cell.textLabel.text = [object description];
+	InfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
+	
+	CellInfo *cellInfo = self.objects[indexPath.row];
+	cell.cellTitleLabel.text = cellInfo.title;
+	cell.cellDescriptionLabel.text = cellInfo.descriptionInfo;
+	[cell.imageView setImageWithURL:cellInfo.image];
+	
 	return cell;
 }
 
