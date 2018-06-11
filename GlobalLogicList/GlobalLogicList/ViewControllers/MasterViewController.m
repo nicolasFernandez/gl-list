@@ -11,6 +11,7 @@
 #import "InfoTableViewCell.h"
 #import "CellInfo.h"
 #import "UIImageView+AFNetworking.h"
+#import "ServicesManager.h"
 
 @interface MasterViewController ()
 
@@ -22,7 +23,13 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 	
-	//TODO: load with service call
+	[[ServicesManager sharedInstance] getInfo:^(NSArray *response){
+		self.objects = [NSMutableArray arrayWithArray:response];
+		[self.tableView reloadData];
+	} failure:^(NSError *error){
+		//TODO: show alert view
+	}];
+
 	self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
 }
 
@@ -43,7 +50,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
 	if ([[segue identifier] isEqualToString:@"showDetail"]) {
 	    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-		CellInfo *cellInfo = self.objects[indexPath.row];
+		NSError *error;
+		CellInfo *cellInfo = [MTLJSONAdapter modelOfClass:CellInfo.class fromJSONDictionary:self.objects[indexPath.row] error:&error];
 	    DetailViewController *controller = (DetailViewController *)[[segue destinationViewController] topViewController];
 	    [controller setDetailItem:cellInfo];
 	    controller.navigationItem.leftBarButtonItem = self.splitViewController.displayModeButtonItem;
@@ -67,10 +75,11 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 	InfoTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
 	
-	CellInfo *cellInfo = self.objects[indexPath.row];
+	NSError *error;
+	CellInfo *cellInfo = [MTLJSONAdapter modelOfClass:CellInfo.class fromJSONDictionary:self.objects[indexPath.row] error:&error];
 	cell.cellTitleLabel.text = cellInfo.title;
 	cell.cellDescriptionLabel.text = cellInfo.descriptionInfo;
-	[cell.imageView setImageWithURL:cellInfo.image];
+	[cell.cellImage setImageWithURL:[NSURL URLWithString:cellInfo.image]];
 	
 	return cell;
 }

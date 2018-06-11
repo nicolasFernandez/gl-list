@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "UIImageView+AFNetworking.h"
 
 @interface DetailViewController ()
 
@@ -17,8 +18,7 @@
 - (void)configureView {
 	// Update the user interface for the detail item.
 	if (self.detailItem) {
-		//TODO: load image
-//		self.detailImage.image =
+		[self.detailImage setImageWithURL:[NSURL URLWithString:self.detailItem.image]];
 	    self.detailDescriptionLabel.text = [self.detailItem descriptionInfo];
 		self.detailTitleLabel.text = [self.detailItem title];
 	}
