@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0321297A20CEF793002828CF /* CellInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321297920CEF793002828CF /* CellInfo.m */; };
 		0321297E20CEFDF0002828CF /* InfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321297D20CEFDF0002828CF /* InfoTableViewCell.m */; };
+		0321298220CF0273002828CF /* ServicesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0321298120CF0273002828CF /* ServicesManager.m */; };
 		035CD9AE20CEE8FB0042BFB0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD9AD20CEE8FB0042BFB0 /* AppDelegate.m */; };
 		035CD9B120CEE8FB0042BFB0 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD9B020CEE8FB0042BFB0 /* MasterViewController.m */; };
 		035CD9B420CEE8FB0042BFB0 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 035CD9B320CEE8FB0042BFB0 /* DetailViewController.m */; };
@@ -45,6 +46,8 @@
 		0321297920CEF793002828CF /* CellInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellInfo.m; sourceTree = "<group>"; };
 		0321297C20CEFDF0002828CF /* InfoTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoTableViewCell.h; sourceTree = "<group>"; };
 		0321297D20CEFDF0002828CF /* InfoTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewCell.m; sourceTree = "<group>"; };
+		0321298020CF0273002828CF /* ServicesManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServicesManager.h; sourceTree = "<group>"; };
+		0321298120CF0273002828CF /* ServicesManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServicesManager.m; sourceTree = "<group>"; };
 		035CD9A920CEE8FB0042BFB0 /* GlobalLogicList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalLogicList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		035CD9AC20CEE8FB0042BFB0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		035CD9AD20CEE8FB0042BFB0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -111,6 +114,15 @@
 			path = UI;
 			sourceTree = "<group>";
 		};
+		0321297F20CF0248002828CF /* Integration */ = {
+			isa = PBXGroup;
+			children = (
+				0321298020CF0273002828CF /* ServicesManager.h */,
+				0321298120CF0273002828CF /* ServicesManager.m */,
+			);
+			path = Integration;
+			sourceTree = "<group>";
+		};
 		035CD9A020CEE8FB0042BFB0 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +148,7 @@
 		035CD9AB20CEE8FB0042BFB0 /* GlobalLogicList */ = {
 			isa = PBXGroup;
 			children = (
+				0321297F20CF0248002828CF /* Integration */,
 				0321297B20CEFDE1002828CF /* UI */,
 				035CD9E220CEEAC00042BFB0 /* Model */,
 				035CD9E120CEEA640042BFB0 /* ViewControllers */,
@@ -402,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				035CD9B120CEE8FB0042BFB0 /* MasterViewController.m in Sources */,
+				0321298220CF0273002828CF /* ServicesManager.m in Sources */,
 				035CD9AE20CEE8FB0042BFB0 /* AppDelegate.m in Sources */,
 				0321297A20CEF793002828CF /* CellInfo.m in Sources */,
 				0321297E20CEFDF0002828CF /* InfoTableViewCell.m in Sources */,
