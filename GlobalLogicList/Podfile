@@ -8,6 +8,7 @@ target 'GlobalLogicList' do
   # Pods for GlobalLogicList
   pod 'AFNetworking', '~> 3.0'
   pod 'Mantle', '~> 2.1'
+  pod 'MBProgressHUD'
 
   target 'GlobalLogicListTests' do
     inherit! :search_paths
