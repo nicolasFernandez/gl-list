@@ -18,8 +18,4 @@
 			 };
 }
 
-+ (NSValueTransformer *)imageJSONTransformer {
-	return [NSValueTransformer valueTransformerForName:MTLURLValueTransformerName];
-}
-
 @end
