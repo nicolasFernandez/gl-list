@@ -121,6 +121,7 @@
 		035CD9AB20CEE8FB0042BFB0 /* GlobalLogicList */ = {
 			isa = PBXGroup;
 			children = (
+				035CD9E220CEEAC00042BFB0 /* Model */,
 				035CD9E120CEEA640042BFB0 /* ViewControllers */,
 				035CD9AC20CEE8FB0042BFB0 /* AppDelegate.h */,
 				035CD9AD20CEE8FB0042BFB0 /* AppDelegate.m */,
@@ -160,6 +161,13 @@
 				035CD9B320CEE8FB0042BFB0 /* DetailViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		035CD9E220CEEAC00042BFB0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		36395D049C0C7CDE1E144602 /* Frameworks */ = {

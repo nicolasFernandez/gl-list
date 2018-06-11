@@ -14,17 +14,23 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Mantle (2.1.0):
+    - Mantle/extobjc (= 2.1.0)
+  - Mantle/extobjc (2.1.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Mantle (~> 2.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - Mantle
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Mantle: 2fa750afa478cd625a94230fbf1c13462f29395b
 
-PODFILE CHECKSUM: b20678b6c26d13fc8ec8485414d1867539cb17fd
+PODFILE CHECKSUM: c5362f6ed76a573aacf5774d1a2b6e2bb2f38ce6
 
 COCOAPODS: 1.5.3
