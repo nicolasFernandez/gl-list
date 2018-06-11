@@ -10,8 +10,12 @@
 
 @implementation CellInfo
 
-+ (NSDictionary *)JSONKeyPathsByPropertyKey { 
-	return [NSDictionary mtl_identityPropertyMapWithModel:self];
++ (NSDictionary *)JSONKeyPathsByPropertyKey {
+	return @{
+			 @"title": @"title",
+			 @"descriptionInfo": @"description",
+			 @"image": @"image"
+			 };
 }
 
 @end
