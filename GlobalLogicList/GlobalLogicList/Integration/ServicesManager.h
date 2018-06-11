@@ -12,4 +12,6 @@
 
 + (instancetype) sharedInstance;
 
+- (void)getInfo:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure;
+
 @end

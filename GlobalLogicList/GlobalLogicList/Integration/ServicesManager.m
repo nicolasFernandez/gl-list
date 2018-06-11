@@ -7,6 +7,7 @@
 //
 
 #import "ServicesManager.h"
+#import <AFNetworking.h>
 
 @implementation ServicesManager
 
@@ -22,6 +23,25 @@ static ServicesManager *sharedInstance;
 
 		return sharedInstance;
 	}
+}
+
+- (void)getInfo:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
+	NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+	AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+	
+	NSURL *URL = [NSURL URLWithString:@"http://private-f0eea-mobilegllatam.apiary-mock.com/list"];
+	NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+	
+	NSURLSessionDataTask *dataTask = [manager dataTaskWithRequest:request completionHandler:^(NSURLResponse *response, id responseObject, NSError *error) {
+		if (error) {
+			NSLog(@"Error: %@", error);
+			failure(error);
+		} else {
+			NSLog(@"%@ %@", response, responseObject);
+			success(responseObject);
+		}
+	}];
+	[dataTask resume];
 }
 
 @end
