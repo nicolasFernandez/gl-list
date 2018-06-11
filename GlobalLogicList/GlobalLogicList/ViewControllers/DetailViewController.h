@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CellInfo.h"
 
 @interface DetailViewController : UIViewController
 
-@property (strong, nonatomic) NSDate *detailItem;
+@property (strong, nonatomic) CellInfo *detailItem;
+
+@property (weak, nonatomic) IBOutlet UIImageView *detailImage;
+@property (weak, nonatomic) IBOutlet UILabel *detailTitleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *detailDescriptionLabel;
 
 @end
